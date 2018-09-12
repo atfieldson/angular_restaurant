@@ -1,0 +1,24 @@
+{
+  "name": "angular_restaurant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "angular.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atfieldson/angular_restaurant.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atfieldson/angular_restaurant/issues"
+  },
+  "homepage": "https://github.com/atfieldson/angular_restaurant#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  }
+}

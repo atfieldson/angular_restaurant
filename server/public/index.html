@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="vendors/angular.min.js"></script>
+    <script src="scripts/client.js"></script>
+    <title>Angular Restaurant</title>
+</head>
+<body ng-app="FoodApp">
+    <h1>Angular Restaurant</h1>
+    <div ng-controller="FoodController as vm">
+    <h2>Menu</h2>
+    <ul>
+        <li ng-repeat="menuItem in vm.menu">
+            {{menuItem.name}}, and it is {{menuItem.deliciousness}}/100 delicious!
+        </li>
+    </ul>
+    <input ng-model="vm.menuItem" type="text" placeholder="What's missing from our menu?" style="width: 200px;">
+    <input ng-model="vm.rating" type="text" placeholder="How delicious is it?">
+    <button ng-click = "vm.add(vm.menuItem, vm.rating)">Add Menu Item</button>
+    </div>
+</body>
+</html>
